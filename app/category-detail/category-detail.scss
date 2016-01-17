@@ -1,0 +1,35 @@
+.category {
+  padding-top: 50px;
+  &__category-item{
+    border-bottom: solid 2px $very-light-gray;
+    padding: 10px;
+    &__title {
+      padding:20px;
+      font-size: 20px;
+      font-weight: bold;
+
+
+    }
+    &__topics {
+      &__topic-item {
+        &__image {
+          img {
+            width: 250px;
+            height: auto;
+          }
+        }
+        &__topic-title {
+          font-size: 14px;
+        }
+        &__detail {
+          text-align: center;
+          }
+        }
+      &__more {
+        text-align: right;
+      }
+    }
+  }
+}
+
+

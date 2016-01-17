@@ -1,0 +1,46 @@
+navbar
+.web-page
+  .topic-detail
+    .container
+      .row
+        .topic-detail__create
+          a.btn.btn-primary(href='#') Bình luận
+        .topic-detail__topic
+          .topic-detail__topic__user
+            .container
+              .row
+                .col-md-1
+                  .topic-detail__topic__user__avatar
+                    img.img-circle(src='assets/images/avatar.png')
+                .col-md-5
+                  .topic-detail__topic__user__username username
+                  .topic-detail__topic__user__title Neque porro quisquam est qui
+          .topic-detail__topic__content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi natus fuga distinctio, quaerat illum fugit at sapiente perferendis nemo laudantium cupiditate quod repudiandae delectus nam autem cumque expedita! Placeat, soluta.
+
+          .topic-detail__topic__time 15h - 26/12/2015
+          .topic-detail__topic__lastupdate 10 hours ago
+          .topic-detail__topic__view View: 120
+          .topic-detail__topic__reply reply
+          .topic-detail__topic__like like: 90
+            span.glyphicon.glyphicon-heart
+          hr
+        - for( var i = 0; i<20; i++)
+          .topic-detail__comment
+            .topic-detail__topic__user
+              .container
+                .row
+                  .col-md-1
+                    .topic-detail__topic__user__avatar
+                      img.img-circle(src='assets/images/avatar.png')
+                  .col-md-5
+                    .topic-detail__topic__user__username username
+                    .topic-detail__topic__user__title Neque porro quisquam est qui
+            .topic-detail__comment__content venenatis faucibus vulputate. Mauris cursus purus leo, et pulvinar risus blandit et. Pellentesque nec ultricies tortor, sed bibendum sapien. Cras fermentum elit ipsum, at iaculis velit ullamcorper eget. Fusce ac pellentesque lacus. Sed vel erat elementum, maximus felis eu, consectetur neque. Nulla viverra pretium suscipit. Curabitur vulputate convallis lobortis.
+            .topic-detail__topic__time 15h - 26/12/2015
+            .topic-detail__topic__lastupdate 10 hours ago
+            .topic-detail__topic__view View: 120
+            .topic-detail__topic__reply reply
+            .topic-detail__topic__like like: 90
+              span.glyphicon.glyphicon-heart
+            hr
+footer

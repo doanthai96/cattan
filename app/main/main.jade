@@ -1,0 +1,33 @@
+navbar
+.web-page
+  .home
+    .home__banner
+      .jumbotron
+        h1 Catta.vn
+        p Diễn đàn sinh viên đại học ngoại thương.
+        a(href="/sign-up")
+          .btn.btn-success.btn-lg Đăng ký
+        a(href="/sign-up")
+          .btn.btn-default.btn-lg Đăng nhập
+    .container
+      .home__topics.row
+        .home__topics__menu
+          .row
+            .home__topics__menu--center.col-md-8 Topic
+            .col-md-2 Category
+            .col-md-1 View
+            .col-md-1 Last Updated
+          .home__topics__item(ng-repeat="doc in documents track by $index")
+            .row
+              .home__topics__item__title.col-md-8
+                .home__topics__item__title__avatar.col-md-2
+                  img(src="assets/images/avatar.png")
+                .home__topics__item__title__text.col-md-10 {{doc.title}}
+                  a(href='/topic-detail') xem thêm ...
+              .home__topics__item__category.col-md-2 {{doc.category}}
+              .home__topics__item__view.col-md-1 {{doc.view}}
+              .home__topics__item__time.col-md-1 {{doc.updated}}
+        div#12.home__topics__xemthem
+          a.btn.btn-primary Xem thêm
+
+footer

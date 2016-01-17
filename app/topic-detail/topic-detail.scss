@@ -1,0 +1,69 @@
+.topic-detail{
+  padding-top: 60px;
+  &__create{
+    text-align: right;
+  }
+  &__topic{
+    &__user{
+      border-bottom: solid 0px $very-light-gray;
+      &__avatar{
+        height: 50px;
+        img{
+          height: 100%;
+          width: auto;
+        }
+      }
+      &__username{
+        font-weight: lighter;
+        color: $gray;
+
+      }
+      &__title{
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    &__content{
+      padding: 20px 40px ;
+      font-size: 16px
+
+    }
+    &__time{
+      display: inline-block;
+      padding: 15px;
+      border-right: solid 1px $very-light-gray;
+
+    }
+    &__lastupdate{
+      display: inline-block;
+      padding: 15px;
+      border-right: solid 1px $very-light-gray;
+    }
+    &__view{
+      display: inline-block;
+      padding: 15px;
+      border-right: solid 1px $very-light-gray;
+    }
+    &__reply{
+      display: inline-block;
+      padding: 15px;
+      border-right: solid 1px $very-light-gray;
+    }
+    &__like{
+      display: inline;
+      padding: 15px;
+      .glyphicon{
+        color:red;
+      }
+    }
+    hr{
+      color:black;
+    }
+  }
+  &__comment{
+    &__content{
+      font-size: 14px;
+      padding: 20px 40px;
+    }
+  }
+}

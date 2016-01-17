@@ -1,0 +1,59 @@
+navbar
+.web-page
+  .category
+    .container
+      .row
+        .row
+          - for(var x = 0;x<5;x++)
+            .category__category-item
+              .category__category-item__title Văn học
+              .category__category-item__topics.container
+                .row
+                  - for (var i = 0; i < 4; ++i)
+                    .category__category-item__topics__topic-item.col-md-3
+                        .category__category-item__topics__topic-item__image
+                          img(src='assets/images/topic-image.jpg')
+                        .category__category-item__topics__topic-item__topic-title Neque porro quisquam est qui dolorem ipsum quia dolor sit ame
+                        .category__category-item__topics__topic-item__detail
+                          a.btn.btn-primary(href='/topic-detail') Chi tiết
+                .category__category-item__topics__more
+                  a(href='#') Xem tất cả
+
+section(class="cd-horizontal-timeline")
+  div.timeline
+    div.events-wrapper
+      div.events
+        ol
+          li
+            a(href="#0" data-date="18/01/2016").selected 18 Jan
+          li
+            a(href="#0" data-date="12/03/2016" ) 12 March
+          li
+            a(href="#0" data-date="26/03/2016" ) 12 March
+          li
+            a(href="#0" data-date="17/04/2016" ) 12 March
+        span.filling-line(aria-hidden="true")
+    ul.cd-timeline-navigation
+      li
+        a(href="#0").prev.inactive Prev
+      li
+        a(href="#0").next Next
+  div.events-content
+    ol
+      li.selected(data-date="18/01/2016")
+        h2 ahsjdhajsd
+        em asnjs fas
+        p ahsbhbvajhvjhnvf sdfauf
+      li(data-date="12/03/2016")
+        h2 ahsjdhajsd
+        em asnjs fas
+        p ahsbhbvajhvjhnvf sa,dmakmcdfauf
+      li(data-date="26/03/2016")
+        h2 ahsjdhajsd
+        em asnjs fasasfkjaif
+        p ahsbhbvajhvjhnvf sdfauf
+      li(data-date="17/04/2016")
+        h2 ahsjdhdjfajfaioajsd
+        em asnjs fas
+        p ahsbhbvajhvjhnvf sdfauf
+footer
